@@ -1,0 +1,141 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/*전체 틀 꾸미기*/
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height:450px;
+    width:600px;
+    margin: auto;
+    background-color: bisque;
+    border: 0.2px solid #c4c4c4;
+    border-radius: 15px;
+}
+
+/*제목부분*/
+.title{
+    margin-top: 15px;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height:50px;
+    width: 200px;
+    background-color: white;
+    border: 0.2px solid #c4c4c4;
+    border-radius: 15px;
+    color: gray;
+    font-family: 'YourHandwritingFont', cursive;
+
+}
+
+/*header부분*/
+.header{
+    margin-top: 10px;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width:400px;
+    background-color: white;
+    border: 0.2px solid #c4c4c4;
+    border-radius: 15px;
+}
+
+.deleteAll{
+    margin-left: 10px;
+}
+
+.complete{
+    margin-left: 10px;
+}
+
+/*todolist들어갈 공간 꾸미기*/
+.listPart{
+    width:480px;
+    height:250px;
+    margin-top: 10px;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: white;
+    border: 0.2px solid #c4c4c4;
+    border-radius: 15px;
+}
+
+/*내용 입력시 내용이 들어갈 컨테이너 꾸미기*/
+.todo-item {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 380px;
+    background-color: antiquewhite;
+    border: 0.2px solid white;
+    border-radius: 15px;
+}
+
+/*js에서 생성한 체크박스 꾸미기*/
+input[name="myCheckbox"] {
+    margin-left: 30px;
+    margin-right: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.allDelete{
+    background-color: black;
+    color: white;
+    width:80px;
+}
+
+.checkComplete{
+    background-color: black;
+    color: white;
+    width:40px;
+
+}
+
+/*js에서 생성한 체크박스 꾸미기*/
+button[name="myDeletebutton"]{
+    background-color: black;
+    color: white;
+    height:15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left:5px ;
+}
+
+/*별표 꾸미기 -> 근데 여기서 별표가 중간에 안온다... justify-content랑 align-items으로 center를 맞추었는데...*/
+.bookmark{
+    margin-top: 10px;
+    margin-left: 430px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:white;
+    color: gold;
+    border: solid black;
+    border-radius: 15px;
+
+    width:25px;
+    height:25px;
+    font-size: 23px;
+    
+}
+
+/*하이라이트 색상*/
+.highlight { 
+    background-color:yellow;
+}
