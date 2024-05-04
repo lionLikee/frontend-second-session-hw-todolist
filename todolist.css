@@ -116,8 +116,10 @@ button[name="myDeletebutton"]{
     margin-left:5px ;
 }
 
-/*별표 꾸미기 -> 근데 여기서 별표가 중간에 안온다... justify-content랑 align-items으로 center를 맞추었는데...*/
+/*별표 꾸미기 -> 근데 여기서 별표가 중간에 안온다... justify-content랑 align-items으로 center를 맞추었는데...★ 이거 사용*/
 .bookmark{
+    height: 30px;
+    width: 40px;
     margin-top: 10px;
     margin-left: 430px;
     display: flex;
@@ -125,11 +127,11 @@ button[name="myDeletebutton"]{
     justify-content: center;
     align-items: center;
     background-color:bisque;
-    color: gold;
-    border: white;
+    /*color: gold;*/
+    border: 0.2px solid white;
     border-radius: 15px;
-    font-size: 35px;
-    
+    font-size: 20px;
+    background-color: white;
 }
 
 /*하이라이트 색상*/
